@@ -26,6 +26,7 @@ function Navigation() {
                   <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
                 </g>
               </svg>
+              <h2>RnD</h2>
             </div>
           </Link>
         </Navbar.Brand>
@@ -33,20 +34,20 @@ function Navigation() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
             <Link to="components" className="nav-link">
-              Examples
+              Builder
             </Link>
             <Nav.Link href="https://github.com/formio/react">
               <i className="fa fa-book me-1"></i>
               <span>Docs</span>
             </Nav.Link>
-            <Nav.Link href="https://github.com/formio/react">
+            {/* <Nav.Link href="https://github.com/formio/react">
               <i className="fa fa-star me-1"></i>
               <span>Star</span>
             </Nav.Link>
             <Nav.Link href="https://github.com/formio/react/fork">
               <i className="fa fa-code-fork me-1"></i>
               <span>Fork</span>
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

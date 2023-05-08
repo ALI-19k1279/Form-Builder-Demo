@@ -1,12 +1,12 @@
 import { Container } from "react-bootstrap";
-import { Form } from "@formio/react";
-import { atomOneLight, CopyBlock } from "react-code-blocks";
+// import { Form } from "@formio/react";
+// import { atomOneLight, CopyBlock } from "react-code-blocks";
 import logo from "../Light-Background.png";
 
 const Home = () => {
-  const onSubmitHandler = (submission) => {
-    console.log(submission);
-  };
+  // const onSubmitHandler = (submission) => {
+  //   console.log(submission);
+  // };
 
   return (
     <>
@@ -75,7 +75,7 @@ const Home = () => {
             <li>Full JavaScript API SDK library on top of Form.io</li>
           </ul>
         </div>
-        <div className="card mb-4">
+        {/* <div className="card mb-4">
           <div className="card-body">
             <h5 className="card-title">Code</h5>
             <CopyBlock
@@ -95,7 +95,7 @@ const Home = () => {
               onSubmit={onSubmitHandler}
             />
           </div>
-        </div>
+        </div> */}
       </Container>
     </>
   );
