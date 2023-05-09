@@ -1,3 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-
-export const store = configureStore({});
+import formBuilderReducer from "../slice/formBuilderSlice";
+export const store = configureStore({
+  reducer: {
+    formBuilder: formBuilderReducer,
+  },
+});

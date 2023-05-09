@@ -15,4 +15,4 @@ class FormBuilderService {
   }
 }
 
-export default new FormBuilderService();
+export const formBuilder = new FormBuilderService();
