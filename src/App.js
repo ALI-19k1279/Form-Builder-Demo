@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='components' element={<Components />}></Route>
-      </Routes> 
+        <Route path="/" element={<Home />}></Route>
+        <Route path="components" element={<Components />}></Route>
+      </Routes>
     </div>
   );
 }
