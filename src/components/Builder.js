@@ -8,10 +8,15 @@ import { createFormBuilderSchema } from "../redux/slice/formBuilderSlice";
 const Builder = () => {
   const [jsonSchema, setSchema] = useState({ components: [] });
   const dispatch = useDispatch();
-  const jsonSchemaRedux = useSelector((state) => state.formBuilder);
+  const jsonSchemaRedux = useSelector((state) => {
+    return { ...state.formBuilder };
+  });
+  console.log("------->", jsonSchemaRedux);
+
   const onFormChange = (schema) => {
     setSchema({ ...schema, components: [...schema.components] });
     dispatch(createFormBuilderSchema(jsonSchema));
+    console.log("redux", jsonSchemaRedux);
   };
 
   return (
@@ -30,7 +35,7 @@ const Builder = () => {
       <Card className="my-4">
         <Card.Body>
           <Card.Title className="text-center">As Rendered Form</Card.Title>
-          <Form form={jsonSchemaRedux} />
+          <Form form={jsonSchema} />
         </Card.Body>
       </Card>
     </>
