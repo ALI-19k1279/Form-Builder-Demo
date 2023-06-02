@@ -83,7 +83,9 @@ const formBuilderSlice = createSlice({
   reducers: {
     createFormBuilderSchema: (state, action) => {
       console.log("action", action.payload);
-      state.components = [...action.payload.components];
+      const components = action.payload.components;
+      const newComponents = components.map((component) => ({ ...component }));
+      state.components = newComponents;
       console.log("state", state);
     },
   },
